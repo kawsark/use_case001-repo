@@ -32,7 +32,7 @@ resource "aws_instance" "web" {
   subnet_id = "${data.terraform_remote_state.network.research_subnet_id}"
 
   tags {
-    Name = "Project001-Research-Instance"
+    Name = "${var.workspace_name}-Instance"
     owner = "vinnie@hashicorp.com"
     TTL = "1"
   }
