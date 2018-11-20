@@ -10,7 +10,7 @@ To demonstrate a basic Sentinel check for tags create a Sentinel policy in your 
 Policy Name: Check for Tags
 Enforcement Mode: hard-mandatory (or your choice)  
 
-`import "tfplan"
+```import "tfplan"
 
 # Warning, this is case sensitive.  This is on purpose especially for organizations that do cost analysis on tag names.   Case sensitivity enforcements allow you to not have duplicates by case
 
@@ -45,4 +45,4 @@ instance_tags = rule {
 main = rule {
     (instance_tags) else true
 }
-`
+```
