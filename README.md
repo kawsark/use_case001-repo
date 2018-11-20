@@ -2,7 +2,7 @@
 This Repo is meant to serve as an example project repo that services 3 environments in Terraform Enterprise, specifically 3 unique worspaces that each map to a sub directory found in this repo. 
 
 ## Getting Started
-This repo should run out of the box when correctly cloned and mapped to a TFE organization that you control.  Each sub directory has a maint.tf and variables file that maps the provisioning of a single ec2 instance to a pre-created VPC and subnet that maps to each workspace Research, Test, & Prod.  Feel free to modify the main.tf, at a minimum update the tags on the instance.  The original demo was performed on a worksapce that had a basic Sentinel policy to check for tags on ec2 instances.  
+This repo should run out of the box when correctly cloned and mapped to a TFE organization that you control.  Each sub directory has a maint.tf and variables.tf file that executes the provisioning of a single ec2 instance to a pre-created VPC and subnet that maps to each workspace Research, Test, & Prod.  Feel free to modify the main.tf, at a minimum update the tags on the instance.  The original demo was performed on a worksapce that had a basic Sentinel policy to check for tags on ec2 instances.  
 
 ## Example Sentinel policy
 To demonstrate a basic Sentinel check for tags create a Sentinel policy in your TFE org:  
