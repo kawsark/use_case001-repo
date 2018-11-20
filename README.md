@@ -46,3 +46,6 @@ main = rule {
     (instance_tags) else true
 }
 ```
+
+## Clean up and deletion of the workspace
+To clean up the resources provisioned by this workspace, in TFE go to Workspaces > choose this workspace > Settings > Queue destroy, accept > then go back to Settings > click Delete from Terraform Enterprise, accept to remove the workspace.  
